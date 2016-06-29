@@ -89,9 +89,10 @@ var game = (function() {
 	// lazyImg 处理
 	Game.addMethod('lazyImg',function(){
 		var arr = this.arr;
+		var src = this.src;
 		arr.forEach(function(e,i){
-			$('<img />').attr('src',this.src + arr[i] + '_2.png').appendTo('#lazyImg');
-			$('<img />').attr('src',this.src + arr[i] + '_1.png').appendTo('#lazyImg');
+			$('<img />').attr('src',src + arr[i] + '_2.png').appendTo('#lazyImg');
+			$('<img />').attr('src',src + arr[i] + '_1.png').appendTo('#lazyImg');
 		})
 	})
 	// 弹出层
