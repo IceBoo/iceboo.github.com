@@ -62,7 +62,6 @@ var game = (function() {
 		$('.imgbox').attr('id', arr[i]).find('.' + arr[i]).show();
 		$('.imgbox').find('.img').attr('src', this.src + arr[i] + '_1.png')
 		$('#box').find('.img1').attr('src', this.src + arr[i] + '_2.png')
-
 	})
 
 	// 绑定点击事件
@@ -94,7 +93,11 @@ var game = (function() {
 			$('<img />').attr('src',src + arr[i] + '_2.png').appendTo('#lazyImg');
 			$('<img />').attr('src',src + arr[i] + '_1.png').appendTo('#lazyImg');
 		})
+		setTimeout(function(){
+			$('#lazyImg').remove();
+		},1000)
 	})
+	
 	// 弹出层
 	function dialog(msg) {
 		var html = "<p>" + msg + "</p>";
