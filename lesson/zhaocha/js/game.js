@@ -60,11 +60,8 @@ var game = (function() {
 		var i = this.level - 1;
 		$('#box').children().removeClass('curr').removeAttr('style')
 		$('.imgbox').attr('id', arr[i]).find('.' + arr[i]).show();
-		$('.imgbox').find('.img').remove();
-		$('<img />').attr('src', this.src + arr[i] + '_1.png').addClass('img100 img').appendTo('.boximg');
-		
-		$('#box').find('.img1').remove();	
-		$('<img />').attr('src', this.src + arr[i] + '_2.png').addClass('img100 img1').prependTo('#box');
+		$('.imgbox').find('.img').attr('src', this.src + arr[i] + '_1.png')
+		$('#box').find('.img1').attr('src', this.src + arr[i] + '_2.png')
 
 	})
 
@@ -89,6 +86,14 @@ var game = (function() {
 		$('.round').text(this.round - this.level + 1)
 	})
 
+	// lazyImg 处理
+	Game.addMethod('lazyImg',function(){
+		var arr = this.arr;
+		arr.forEach(function(e,i){
+			$('<img />').attr('src',this.src + arr[i] + '_2.png').appendTo('#lazyImg');
+			$('<img />').attr('src',this.src + arr[i] + '_1.png').appendTo('#lazyImg');
+		})
+	})
 	// 弹出层
 	function dialog(msg) {
 		var html = "<p>" + msg + "</p>";

@@ -8,6 +8,7 @@ function init() {
 	game.play();
 	game.count(function() {
 		game.countTimer(15);
+		game.lazyImg();
 	});
 	game.creatImg()
 	game.click();
