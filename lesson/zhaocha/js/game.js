@@ -60,8 +60,11 @@ var game = (function() {
 		var i = this.level - 1;
 		$('#box').children().removeClass('curr').removeAttr('style')
 		$('.imgbox').attr('id', arr[i]).find('.' + arr[i]).show();
-		$('.imgbox').find('.img').attr('src', this.src + arr[i] + '_1.png')
-		$('#box').find('.img1').attr('src', this.src + arr[i] + '_2.png')
+		$('.imgbox').find('.img').remove();
+		$('<img />').attr('src', this.src + arr[i] + '_1.png').appendTo('.imgbox');
+		
+		$('#box').find('.img1').remove();	
+		$('<img />').attr('src', this.src + arr[i] + '_2.png').prependTo('#box');
 
 	})
 
