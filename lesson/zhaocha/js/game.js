@@ -61,7 +61,7 @@ var game = (function() {
 		$('#box').children().removeClass('curr').removeAttr('style')
 		$('.imgbox').attr('id', arr[i]).find('.' + arr[i]).show();
 		$('.imgbox').find('.img').remove();
-		$('<img />').attr('src', this.src + arr[i] + '_1.png').addClass('img100 img').appendTo('.imgbox');
+		$('<img />').attr('src', this.src + arr[i] + '_1.png').addClass('img100 img').appendTo('.boximg');
 		
 		$('#box').find('.img1').remove();	
 		$('<img />').attr('src', this.src + arr[i] + '_2.png').addClass('img100 img1').prependTo('#box');
