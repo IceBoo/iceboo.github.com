@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport" />
+		<title>709大促-潮人找茬</title>
+		<link rel="stylesheet" type="text/css" href="CSS/play.css" />
+		<style type="text/css">
+			body {
+				background: url(img/play_bg.png);
+				background-size: 40px auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--封面 start-->
+		<p class="play_box"><img src="img/play_start.jpg" class="start" alt="" /></p>
+		<!--封面 end-->
+		<div id="bg"></div>
+		<!--主内容区 start-->
+		<div class="" id="content">
+			<p class="mt20"><img src="img/play_title1.png" class="img100" alt="" /></p>
+			<div class="play_djs ftblack">
+				<p class="text align-ct lt">
+					<i>倒计时<br/><span class="countTimer">15</span>s</i>
+				</p>
+				<p class="text align-ct rt">
+					<i>ROUND<br/>
+						<span class="round">1</span>
+					</i>
+				</p>
+				<div class="box">
+					<p><span class="progress"></span></p>
+				</div>
+			</div>
+			<p class="ft12 ftblack align-ct">右边的搭配与左边的有哪些不同？（点击右边寻找不同）</p>
+			<div class="play_img positionR">
+				<!--<p class="btn"></p>-->
+				<ul class="clearfix imgbox" id="a">
+					<li>
+						<p>
+							<img src="" class="img100 img" alt="" />
+						</p>
+					</li>
+					<li>
+						<p class="positionR" id="box">
+							<img src="" class="img100 img1" alt="" />
+							<i class="a_1 a"></i>
+							<i class="a_2 a"></i>
+							<i class="b_1 b"></i>
+							<i class="c_1 c"></i>
+							<i class="d_1 d"></i>
+							<i class="e_1 e"></i>
+							<i class="e_2 e"></i>
+							<i class="f_1 f"></i>
+							<i class="g_1 g"></i>
+							<i class="h_1 h"></i>
+							<i class="i_1 i"></i>
+							<i class="j_1 j"></i>
+							<i class="k_1 k"></i>
+							<i class="l_1 l"></i>
+							<i class="m_1 m"></i>
+							<i class="n_1 n"></i>
+							<i class="o_1 o"></i>
+							<i class="o_2 o"></i>
+							<i class="o_3 o"></i>
+						</p>
+					</li>
+
+				</ul>
+			</div>
+			<p class="mt20"><img src="img/play_title2.png" class="img100" alt="" /></p>
+			<ul class="shop clearfix">
+				<li>
+					<section class="bgFFF">
+						<a href="javascript:;">
+							<p class="img_bd"><img src="img/shop2.jpg" class="img100" alt="" /></p>
+							<div class="info">
+								<p class="ftred ft12">加购即返大额优惠券</p>
+								<h2 class="wordall ft3">珀莱雅舒缓喷雾80ml</h2>
+								<p class="price ft3">
+									79价:<span class="ftred">￥<em>8.8</em></span><del>￥98.00</del>
+								</p>
+								<p class="btn_store big align-ct ftFFF">立即抢购 ></p>
+							</div>
+						</a>
+					</section>
+				</li>
+				<li>
+					<section class="bgFFF">
+						<a href="javascript:;">
+							<p class="img_bd"><img src="img/shop2.jpg" class="img100" alt="" /></p>
+							<div class="info">
+								<p class="ftred ft12">加购即返大额优惠券</p>
+								<h2 class="wordall ft3">珀莱雅舒缓喷雾80ml</h2>
+								<p class="price ft3">
+									79价:<span class="ftred">￥<em>8.8</em></span><del>￥98.00</del>
+								</p>
+								<p class="btn_store big align-ct ftFFF">立即抢购 ></p>
+							</div>
+						</a>
+					</section>
+				</li>
+			</ul>
+		</div>
+		<!--主内容区 end-->
+
+		<!--全部答对 弹窗 start-->
+		<div class="container" id="allwin">
+			<p class="play_layer"></p>
+			<div class="play_layer_box">
+				<i class="icon bg1 a"></i>
+				<i class="icon bg2 b"></i>
+				<i class="icon bg2 c"></i>
+				<i class="icon bg1 d"></i>
+				<i class="icon bg2 e"></i>
+				<i class="icon bg2 f"></i>
+				<i class="icon bg1 g"></i>
+				<i class="icon bg2 h"></i>
+				<div class="content">
+					<p class="msg align-ct">
+						全部答对，送你一个5元红包～<br/>分享给好友有机会再得一个红包！
+					</p>
+					<p class="btn align-ct clearfix">
+						<a href="javascript:;" class="bgorange fl" onclick="next('#phone')"><span class="ftblack" >点击查看</span></a>
+						<a href="javascript:;" class="bgFFF fl"><span class="ftblack">逛逛会场</span></a>
+					</p>
+					<p class="share ftblack bgFFF align-ct"><span>分享好友赢红包</span></p>
+				</div>
+			</div>
+		</div>
+		<!--全部答对 弹窗 end-->
+
+		<!--挑战下一题 弹窗 start-->
+		<div class="container" id="nextWindow">
+			<p class="play_layer"></p>
+			<div class="play_layer_box">
+				<i class="icon bg1 a"></i>
+				<i class="icon bg2 b"></i>
+				<i class="icon bg2 c"></i>
+				<i class="icon bg1 d"></i>
+				<i class="icon bg2 e"></i>
+				<i class="icon bg2 f"></i>
+				<i class="icon bg1 g"></i>
+				<i class="icon bg2 h"></i>
+				<div class="content">
+					<p class="msg align-ct">
+						好眼力，还有<span class="level"></span> 关等你挑战！<br/>挑战成功有机会获得红包～
+					</p>
+					<p class="btn pbig align-ct clearfix">
+						<a href="javascript:;" class="big bgorange" id="nextSub"><span class="ftblack bg_jt">挑战下一题 </span></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--挑战下一题 弹窗 end-->
+
+		<!--在玩一次 弹窗 start-->
+		<div class="container again">
+			<p class="play_layer"></p>
+			<div class="play_layer_box">
+				<i class="icon bg1 a"></i>
+				<i class="icon bg2 b"></i>
+				<i class="icon bg2 c"></i>
+				<i class="icon bg1 d"></i>
+				<i class="icon bg2 e"></i>
+				<i class="icon bg2 f"></i>
+				<i class="icon bg1 g"></i>
+				<i class="icon bg2 h"></i>
+				<div class="content">
+					<p class="msg align-ct">
+						时间到了，找茬失败！<br/>再玩一次，继续加油！
+					</p>
+					<p class="btn align-ct clearfix">
+						<a href="javascript:;" class="bgorange fl" id="again"><span class="ftblack">再玩一次</span></a>
+						<a href="javascript:;" class="bgFFF fl"><span class="ftblack">逛逛会场</span></a>
+					</p>
+					<p class="share ftblack bgFFF align-ct"><span>分享好友帮你找茬</span></p>
+				</div>
+			</div>
+		</div>
+		<!--在玩一次 弹窗 end-->
+
+		<!--找错了 弹窗 start-->
+		<div class="container" id="error">
+			<div class="play_layer_box text ftFFF align-ct">
+				<span>找错咯～再看看</span>
+			</div>
+		</div>
+		<!--找错了 弹窗 end-->
+
+		<!--更新输入手机号 弹窗 start-->
+		<div class="container" id="phone">
+			<p class="play_layer"></p>
+			<div class="play_layer_box">
+				<i class="icon bg1 a"></i>
+				<i class="icon bg2 b"></i>
+				<i class="icon bg2 c"></i>
+				<i class="icon bg1 d"></i>
+				<i class="icon bg2 e"></i>
+				<i class="icon bg2 f"></i>
+				<i class="icon bg1 g"></i>
+				<i class="icon bg2 h"></i>
+				<div class="content">
+					<p class="msg align-ct">
+						全部答对，送你一个<em>5</em>元红包～<br/>红包将发送至您的手机号中
+					</p>
+					<div class="tel ftFFF">
+						<label>手机号码</label>
+						<p class="bgFFF"><input type="tel" class="align-ct" /></p>
+					</div>
+					<p class="share ftblack bgFFF align-ct" id="post"><em class="ftblack">确认提交</em></p>
+				</div>
+			</div>
+		</div>
+		<!--更新输入手机号 弹窗 end-->
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/gameStart.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>
