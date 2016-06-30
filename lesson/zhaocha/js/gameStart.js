@@ -30,5 +30,5 @@ $('#again').on('tap', function() {
 })
 
 $('#post').on('tap', function() {
-	$('#phone').removeClass('show')
+	location.reload();
 })
