@@ -130,7 +130,6 @@ var game = (function() {
 				setTimeout(function() {
 					$('#allwin').addClass('show');
 				}, 500)
-
 			} else {
 				that.level--;
 				setTimeout(function() {
